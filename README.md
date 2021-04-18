@@ -12,7 +12,7 @@ First, you need to download node.js on your computer
     CREATE TABLE users (
     id int(10) NOT NULL auto-increment,
     username varchar(90) NOT NULL,
-    firstname varchar(90) NOT NULL,           <----- Registered users
+    firstname varchar(90) NOT NULL,          
     lastname varchar(90) NOT NULL,
     email varchar(90) NOT NULL,
     password varchar(90) NOT NULL
@@ -20,12 +20,18 @@ First, you need to download node.js on your computer
 
     CREATE TABLE userUploads (
     id int(10) NOT NULL auto-increment,
-    header varchar(90) NOT NULL,              <----- This one for post publishing
+    header varchar(90) NOT NULL,            
     highlight varchar(90) NOT NULL,
     main varchar(90) NOT NULL,
     image varchar(255) NOT NULL
 );
 
+
+
 5. My database's name is users :p
+
+
+
+
 6. Enjoy!
     
