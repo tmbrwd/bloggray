@@ -41,6 +41,7 @@ First, you need to download node.js on your computer
 
 5. My database's name is users :p
 
+6. You can log in by username: test, password: test
 
 
 
