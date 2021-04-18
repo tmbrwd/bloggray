@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: cadetblue;
+    color: #fff;
+}
+
+.u-name {
+    font-size: 20px;
+    padding-left: 17px;
+}
+
+.u-name b {
+    color: blanchedalmond;
+}
+
+.header i {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.header i:hover {
+    color: #ffcb7d;
+}
+
+.user-p {
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 25px;
+}
+
+.user-p img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.user-p h4 {
+    color: #ccc;
+    padding: 5px 0;
+}
+
+.side-bar {
+    width: 250px;
+    background: #3ca9b8;
+    min-height: 100vh;
+    transition: 0.2s width;
+}
+
+.body {
+    display: flex;
+    background-color: #ffafaf;
+}
+
+.section-1 {
+    width: 100%;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-1 h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.section-1 p {
+    color: #ffdf99;
+    font-size: 20px;
+    background: #fff;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.side-bar ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.side-bar ul li {
+    font-size: 16px;
+    padding: 15px 0px;
+    padding-left: 20px;
+    transition: .2s background;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.side-bar ul li:hover {
+    background: #ffd069;
+}
+
+.side-bar ul li a {
+    text-decoration: none;
+    color: #eee;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.side-bar ul li a i {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 23px;
+}
+
+#navbtn {
+    display: inline-block;
+    margin-left: 70px;
+    font-size: 20px;
+    transition: 500ms color;
+}
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked~.body .side-bar {
+    width: 60px;
+}
+
+#checkbox:checked~.body .side-bar .user-p {
+    visibility: hidden;
+}
+
+#checkbox:checked~.body .side-bar a span {
+    display: none;
+}
+
+
+/*table*/
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: hsl(189, 100%, 86%);
+}
+
+#customers tr:hover {
+    background-color: rgba(255, 248, 248, 0.308);
+    transition: .3s;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #9b9b9b;
+    color: rgb(255, 255, 255);
+}
+
+input[type=button],
+input[type=submit] {
+    position: relative;
+    left: 50%;
+    background-color: rgb(221, 127, 19);
+    padding: 6px;
+    border: none;
+    color: white;
+    border: solid 1px gray;
+}
+
+input[type=button],
+input[type=submit]:hover {
+    border: solid 1px black;
+    transition: 0.3s;
+    background-color: burlywood;
+    color: black;
+}
+
+.editUser {
+    border: solid 1px gray;
+    padding: 6px;
+    text-decoration: none;
+    background-color: rgb(255, 145, 0);
+    color: rgb(255, 255, 255);
+}
+
+.editUser:hover {
+    border: solid 1px black;
+    transition: .3s;
+    background-color: burlywood;
+    color: black;
+}

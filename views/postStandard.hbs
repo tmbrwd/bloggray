@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet"> 
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../public/base.css">
+    <link rel="stylesheet" href="../public/vendor.css">
+    <link rel="stylesheet" href="../public/main.css">
+
+    <style>
+        /* NAVBAR */
+
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #3ca9b8;
+            border: solid 0px 0px 0px 2px rgb(170, 86, 17);
+        }
+        
+        .navbar a {
+            background-color: cadetblue;
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .navbar a.active {
+            background-color: blanchedalmond;
+            color: black    ;
+        }
+        
+        .navbar a.active:hover {
+            background-color: cadetblue ;
+            color: black;
+        }
+        
+        .dropdown {
+            float: right;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+        }
+        
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: blanchedalmond;
+        }
+        
+        .dropdown-content {
+            border: solid 2px blanchedalmond;
+            display: none;
+            position: absolute;
+            background-color: bisque;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        h2{
+            margin-top: 10%;
+        }
+        /* navbar ends here */
+        /*body*/
+        
+        body {
+            background-color: #eef7ff;
+        }
+        .publishContainer{
+            height: 100vw;
+            width: 100%;
+            margin: 0;
+            background-image: linear-gradient(cadetblue, #eef7ff);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .publishContainerImg{
+            
+            margin-left: 3.5vw;
+            width: 40%;
+            align-items: center;
+        }
+        p{
+            width: 70%;
+        }
+        /*body ends here*/
+    </style>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Welcome!</title>
+</head>
+
+<body>
+     <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="top" class="s-wrap site-wrapper">
+    <header>
+        <div class="navbar">
+            <a class="active" href="/loggedIn">Home</a>
+
+			<a href="/uploadForm">"PUBLISH"</a>
+            
+            <a href="/profileSection">Profile</a>
+
+        </div>
+        </div>
+        </div>
+    </header>
+
+        <div class="publishContainer">
+            <div class="publishContainerImg">
+        <img src="../public/upload/{{contents.image}}" style="border: solid black 3px;" alt="">
+        </div>
+        <div>
+        <h1>{{contents.header}}</h1>
+        </div>
+        <p>
+            {{contents.main}}
+        </p>
+        </div>
+     
+    
+      
+        <footer class="s-footer">
+            <div class="row">
+                <div class="column large-full footer__content">
+                    <div class="footer__copyright">
+                        <span>© Copyright Gray's</span> 
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </footer>
+
+    </div> <!-- end s-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+   
+    <script src="../js/plugins.js"></script>
+    <script src="../js/first.js"></script>
+
+
+<!--main site-->
+</body>
+<!-- masonry libray for horizontal grid -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+<!--uildel-->
+<script src="../js/main.js"></script>
+
+
+</body>
+
+</html>

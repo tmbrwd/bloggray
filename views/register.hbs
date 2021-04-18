@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url(../public/papers.co-nb40-coffee-food-brown-eat-nature-drink-life-cafe-2560x1600.jpg);
+            background-size: cover;
+        }
+        
+        .loginSection {
+            padding: 5%;
+            position: absolute;
+            background-color: rgba(255, 204, 128, 0.664);
+            height: 80%;
+            text-align: center;
+            width: 40%;
+            left: 25%;
+            border: solid 3px rgb(255, 232, 131);
+            font-size: 65px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 4px;
+        }
+        /*Input style*/
+        
+        .inputStyle {
+            position: absolute;
+            font-size: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 80%;
+            height: 8%;
+            margin-bottom: 5px;
+            top: 25%;
+            left: 10%;
+            background: rgba(255, 229, 212, 0.8);
+        }
+        
+        .inputStyleFirstname {
+            position: absolute;
+            font-size: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 80%;
+            height: 8%;
+            left: 10%;
+            margin-bottom: 5px;
+            top: 35%;
+            background: rgba(255, 229, 212, 0.8);
+        }
+        
+        .inputStyleLastname {
+            position: absolute;
+            font-size: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 80%;
+            height: 8%;
+            top: 45%;
+            margin-bottom: 5px;
+            left: 10%;
+            background: rgba(255, 229, 212, 0.8);
+        }
+        
+        .inputStyleEmail {
+            position: absolute;
+            font-size: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 80%;
+            height: 8%;
+            top: 55%;
+            left: 10%;
+            margin-bottom: 5px;
+            background: rgba(255, 229, 212, 0.8);
+        }
+        
+        .inputStylePassword {
+            position: absolute;
+            font-size: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 80%;
+            height: 8%;
+            left: 10%;
+            top: 65%;
+            margin-bottom: 5px;
+            background: rgba(255, 229, 212, 0.8);
+        }
+        .inputStylePhoto {
+            position: absolute;
+            font-size: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 80%;
+            height: 8%;
+            top: 75%;
+            left: 10%;
+            margin-bottom: 5px;
+            background: rgba(255, 229, 212, 0.8);
+        }
+        /*input styles end here*/
+        
+        .registerButton {
+            position: absolute;
+            height: 10%;
+            width: 80%;
+            background-color: burlywood;
+            text-align: center;
+            top: 85%;
+            left: 11%;
+            border: solid 2px white;
+        }
+        
+        .registerButton:hover {
+            color: wheat;
+            transition: .4s;
+            background-color: rgb(95, 160, 124);
+            border: none;
+        }
+    </style>
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="loginSection">
+        <form action="/auth/register" method="POST" enctype="multipart/form-data">
+        Register form
+        <input class="inputStyle" type="text" id="username" name="username" placeholder="Enter your username">
+        <input class="inputStyleFirstname" type="text" id="firstname" name="firstname" placeholder="Enter your firstname">
+        <input class="inputStyleLastname" type="text" id="lastname" name="lastname" placeholder="Enter your lastname">
+        <input class="inputStyleEmail" type="email" id="email" name="email" placeholder="Enter your email">
+        <input class="inputStylePassword" type="password" id="password" name="password" placeholder="Enter your password">
+        <input class="inputStylePhoto" type="file" name="profilePhoto" id="photo" placeholder="enter a photo here">
+
+        <button class="registerButton" type="submit">"REGISTER"</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
