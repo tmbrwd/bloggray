@@ -3,6 +3,17 @@ i just made a little beta blog
 
 Here's what you have to do to make my little blog working properly :)
 
+features:
+
+-You can upload image/gifs into the database
+-You can register an user
+-Log in with a user
+-See an uploaded posts in style
+-Edit an user
+-Delete an user
+-Edit/Delete a post
+
+
 First, you need to download node.js on your computer
 
 2. you need to download node modules by using : "npm install"
