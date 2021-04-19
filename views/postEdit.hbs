@@ -191,7 +191,7 @@
       <main id="site-main">
             <!--blog post section-->
             <div class="publishContainer">
-        <form action="/auth/editPost/{{id}}" method="POST" enctype="multipart/form-data">
+        <form action="/auth/editPost/{{posts.id}}" method="POST" enctype="multipart/form-data">
             <input class="inputStyle" type="text" name="header" id="header" value="{{posts.header}}">
             <input class="inputStyle1" type="text" name="highlight" id="highlight" value="{{posts.highlight}}">
             <textarea class="inputStyleTextarea" type="text" name="main" id="main" placeholder="{{posts.main}}" cols="20"></textarea>
